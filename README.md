@@ -1,2 +1,2 @@
-# web
-weather forecasting
+#weather forecasting
+tells the climate of weather temperature
