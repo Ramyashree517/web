@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Forecast</h1>
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button onclick="getWeather()">
+          <img
+            src="https://img.icons8.com/ios-filled/50/ffffff/search--v1.png"
+            alt="Search"
+          />
+        </button>
+      </div>
+      <div id="weather-info" class="weather-card hidden">
+        <h2 id="city-name"></h2>
+        <img id="weather-icon" src="" alt="Weather icon" class="weather-icon" />
+        <p id="temperature" class="temp"></p>
+        <p id="description" class="description"></p>
+        <div class="details">
+          <div class="detail">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/humidity.png"
+              alt="Humidity"
+            />
+            <p id="humidity"></p>
+          </div>
+          <div class="detail">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/wind.png"
+              alt="Wind"
+            />
+            <p id="wind-speed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
